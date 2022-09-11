@@ -26,3 +26,24 @@
 - [Trillo Project [SCSS]](https://github.com/PilarczykM/Trillo_Project "Trillo Project")
 - [Portwind [Tailwind]](https://github.com/PilarczykM/Tailwind-sandbox "Portwind Tailwind")
 - [Dashboard [React, (Syncfusion UI kit) Tailwind]](https://github.com/PilarczykM/Marcello_Dashboard "Dashboard")
+
+## JS
+- [SOLID](https://github.com/PilarczykM/js_solid "JS SOLID")
+
+## Python
+- [Basic python](https://github.com/PilarczykM/python-basic)
+- [Python SOLID](https://github.com/PilarczykM/python-solid)
+- Other python projects for new project:
+   * [rock-paper-scissors](https://github.com/PilarczykM/python-rock-paper-scissors)
+   * [Point-of-sale---refactor-example](https://github.com/PilarczykM/Point-of-sale---refactor-example)
+   * [Yahtzee](https://github.com/PilarczykM/python-yahtzee)
+   
+## C Sharp
+### SOLID
+- SRP ???
+- [OCP](https://github.com/PilarczykM/CSharp-OpenClosePrinciple)
+- [LSP](https://github.com/PilarczykM/Liskov-Substitution-Principle)
+- [ISP](https://github.com/PilarczykM/Interface-Segregation-Principle)
+- [DIP](https://github.com/PilarczykM/Dependency-Inversion-Principle)
+- [Dependency Injection with Autofac](https://github.com/PilarczykM/Dependency-Injection-with-Autofac)
+- [Extension Methods](https://github.com/PilarczykM/Extension-Methods)
