@@ -18,3 +18,11 @@
    * The Migrating Cheatsheet helps collate advice for incrementally migrating large codebases from JS or Flow, from people who have done it.
 - [Learning notes - OOB, Architecture, JS](https://github.com/PilarczykM/learning-notes "learning-notes")
 - [State Manager Example Applications](https://github.com/PilarczykM/which-react-state-manager "Which state manager")
+
+## Basic HTML projects
+- [StudyIT [CSS]](https://github.com/PilarczykM/StudyIT "StudyIT")
+- [Nexture Project [SCSS]](https://github.com/PilarczykM/Nexter_Project "Nexture Project")
+- [Nexture Project [SCSS]](https://github.com/PilarczykM/Nature_Project "Nature Project")
+- [Trillo Project [SCSS]](https://github.com/PilarczykM/Trillo_Project "Trillo Project")
+- [Portwind [Tailwind]](https://github.com/PilarczykM/Tailwind-sandbox "Portwind Tailwind")
+- [Dashboard [React, (Syncfusion UI kit) Tailwind]](https://github.com/PilarczykM/Marcello_Dashboard "Dashboard")
