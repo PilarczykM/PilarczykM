@@ -47,3 +47,4 @@
 - [DIP](https://github.com/PilarczykM/Dependency-Inversion-Principle)
 - [Dependency Injection with Autofac](https://github.com/PilarczykM/Dependency-Injection-with-Autofac)
 - [Extension Methods](https://github.com/PilarczykM/Extension-Methods)
+- [Onion Architecture with CQRS](https://github.com/PilarczykM/webinar-cqrs-clean-architecture)
