@@ -1,5 +1,5 @@
-- 👋 Hi, I’m @PilarczykM
-- 👀 I’m interested in Front end (React)
+# 👋 Hi, I’m @PilarczykM
+- 👀 I’m interested in Frontend (React) also Angular 🙈
 - 🌱 I’m currently learning React, Redux, Tailwind, Storybook, Docker
 - 💞️ I’m looking to collaborate on beginner intermediate projects
 - 🙀 I'm working for Sii as a Python Developer
