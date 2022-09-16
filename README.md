@@ -7,6 +7,7 @@
 
 
 ## Templates
+- [React folder structure](https://github.com/PilarczykM/react-folder-structure "React folder structure")
 - [NextJs](https://github.com/PilarczykM/nextjs-fullstack-app-template "NextJS Template")
 - [React TS with eslint prettier and Huskey](https://github.com/PilarczykM/react-typescript-eslint-prettier-template "React TS Template")
 - [React JS with eslint prettier and Huskey](https://github.com/PilarczykM/react-javascript-eslint-prettier-template "React JS Template")
