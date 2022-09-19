@@ -11,6 +11,7 @@
 - [NextJs](https://github.com/PilarczykM/nextjs-fullstack-app-template "NextJS Template")
 - [React TS with eslint prettier and Huskey](https://github.com/PilarczykM/react-typescript-eslint-prettier-template "React TS Template")
 - [React JS with eslint prettier and Huskey](https://github.com/PilarczykM/react-javascript-eslint-prettier-template "React JS Template")
+- ["NextJS Wordpress Starter](https://github.com/PilarczykM/next-wordpress-starter "NextJS Wordpress Starter")
 
 ## CheatSheets
 - [React-CheatSheet](https://github.com/PilarczykM/React-CheatSheet "React cheatsheet")
