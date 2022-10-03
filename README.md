@@ -9,6 +9,8 @@
 ### Currently working on
 - [Rick and Morty](https://github.com/PilarczykM/Rick-and-Morty)
   - Maybe comparison between Astro and Next Js (T3 Stack???)
+    - Why Astro build is so light compared to other frameworks
+    - Maybe try to hook tRPC to Astro project? Will see.
 
 ## Templates
 - [React folder structure](https://github.com/PilarczykM/react-folder-structure "React folder structure")
