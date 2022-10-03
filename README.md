@@ -23,7 +23,7 @@
 
 ## Basic HTML projects
 - [StudyIT [CSS]](https://github.com/PilarczykM/StudyIT "StudyIT")
-- [Nexture Project [SCSS]](https://github.com/PilarczykM/Nexter_Project "Nexture Project")
+- [Nature Project [SCSS]](https://github.com/PilarczykM/Nexter_Project "Nexture Project")
 - [Nexture Project [SCSS]](https://github.com/PilarczykM/Nature_Project "Nature Project")
 - [Trillo Project [SCSS]](https://github.com/PilarczykM/Trillo_Project "Trillo Project")
 - [Portwind [Tailwind]](https://github.com/PilarczykM/Tailwind-sandbox "Portwind Tailwind")
