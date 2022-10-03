@@ -6,6 +6,10 @@
 - 📫 How to reach me: marcinpilarczyk@me.com
 
 
+### Currently working on
+- [Rick and Morty](https://github.com/PilarczykM/Rick-and-Morty)
+  - Maybe comparison between Astro and Next Js (T3 Stack???)
+
 ## Templates
 - [React folder structure](https://github.com/PilarczykM/react-folder-structure "React folder structure")
 - [NextJs](https://github.com/PilarczykM/nextjs-fullstack-app-template "NextJS Template")
