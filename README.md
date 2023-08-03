@@ -1,8 +1,3 @@
-<div align="center">
-	<img src="body.svg" width="800" height="400">
-</div>
-
-
 # 👋 Hi, I’m @PilarczykM
 - 👀 I’m interested in Frontend (React)
 - 🌱 I’m currently learning React, Redux, Tailwind, Storybook, Docker
