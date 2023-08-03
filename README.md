@@ -1,3 +1,7 @@
+<p align="center">$\Huge{Marcin}$ $\color{Cerulean}{\Huge{Pilarczyk}}$</p>
+<p align="center">$\color{Cerulean}{\scriptsize{Sii - Software Python Developer}}$</p>
+<p align="center">$\color{White}{\normalsize{Poland - Gdańsk}}$</p>
+
 # 👋 Hi, I’m @PilarczykM
 - 👀 I’m interested in Frontend (React)
 - 🌱 I’m currently learning React, Redux, Tailwind, Storybook, Docker
