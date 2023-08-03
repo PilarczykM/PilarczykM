@@ -1,3 +1,11 @@
+<div align="center">
+	<br>
+	<a href="body.svg">
+		<img src="header.svg" width="800" height="400">
+	</a>
+</div>
+
+
 # 👋 Hi, I’m @PilarczykM
 - 👀 I’m interested in Frontend (React)
 - 🌱 I’m currently learning React, Redux, Tailwind, Storybook, Docker
