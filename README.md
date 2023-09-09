@@ -1,27 +1,10 @@
-<p align="center">$\Huge{Marcin}$ $\color{Cerulean}{\Huge{Pilarczyk}}$</p>
-<p align="center">$\color{Cerulean}{\scriptsize{Sii - Software Python Developer}}$</p>
-<p align="center">$\color{White}{\normalsize{Poland - Gdańsk}}$</p>
-
 # 👋 Hi, I’m @PilarczykM
-- 👀 I’m interested in Frontend (React)
-- 🌱 I’m currently learning React, Redux, Tailwind, Storybook, Docker
-- 💞️ I’m looking to collaborate on beginner intermediate projects
-- 🙀 I'm working for Sii as a Python Developer
+- 👀 I interested in Frontend (React/NextJS)
+- 🤯 I not afraid to learn Backend (C#/PHP)
+- 🌱 I learn React, Redux, Tailwind
+- 💞️ I look to collaborate on beginner to intermediate projects.
+- 🙀 I work for Sii as a Python Developer
 - 📫 How to reach me: marcinpilarczyk@me.com
-
-
-### Currently working on
-- [Rick and Morty](https://github.com/PilarczykM/Rick-and-Morty)
-  - Maybe comparison between Astro and Next Js (T3 Stack???)
-    - Why Astro build is so light compared to other frameworks
-    - Maybe try to hook tRPC to Astro project? Will see.
-
-## Templates
-- [React folder structure](https://github.com/PilarczykM/react-folder-structure "React folder structure")
-- [NextJs](https://github.com/PilarczykM/nextjs-fullstack-app-template "NextJS Template")
-- [React TS with eslint prettier and Huskey](https://github.com/PilarczykM/react-typescript-eslint-prettier-template "React TS Template")
-- [React JS with eslint prettier and Huskey](https://github.com/PilarczykM/react-javascript-eslint-prettier-template "React JS Template")
-- [NextJS Wordpress Starter](https://github.com/PilarczykM/next-wordpress-starter "NextJS Wordpress Starter")
 
 ## CheatSheets
 - [React-CheatSheet](https://github.com/PilarczykM/React-CheatSheet "React cheatsheet")
@@ -30,6 +13,9 @@
    * The Migrating Cheatsheet helps collate advice for incrementally migrating large codebases from JS or Flow, from people who have done it.
 - [Learning notes - OOB, Architecture, JS](https://github.com/PilarczykM/learning-notes "learning-notes")
 - [State Manager Example Applications](https://github.com/PilarczykM/which-react-state-manager "Which state manager")
+
+## My Frontend mentor challenges repo
+- [Link](https://github.com/PilarczykM/frontendmentor-challenges)
 
 ## Basic HTML projects
 - [StudyIT [CSS]](https://github.com/PilarczykM/StudyIT "StudyIT")
@@ -52,7 +38,7 @@
    
 ## C Sharp
 ### SOLID
-- SRP ???
+- SRP Single Responsibility Principle
 - [OCP](https://github.com/PilarczykM/CSharp-OpenClosePrinciple)
 - [LSP](https://github.com/PilarczykM/Liskov-Substitution-Principle)
 - [ISP](https://github.com/PilarczykM/Interface-Segregation-Principle)
@@ -60,3 +46,11 @@
 - [Dependency Injection with Autofac](https://github.com/PilarczykM/Dependency-Injection-with-Autofac)
 - [Extension Methods](https://github.com/PilarczykM/Extension-Methods)
 - [Onion Architecture with CQRS](https://github.com/PilarczykM/webinar-cqrs-clean-architecture)
+
+
+## Templates
+- [React folder structure](https://github.com/PilarczykM/react-folder-structure "React folder structure")
+- [NextJs](https://github.com/PilarczykM/nextjs-fullstack-app-template "NextJS Template")
+- [React TS with eslint prettier and Huskey](https://github.com/PilarczykM/react-typescript-eslint-prettier-template "React TS Template")
+- [React JS with eslint prettier and Huskey](https://github.com/PilarczykM/react-javascript-eslint-prettier-template "React JS Template")
+- [NextJS Wordpress Starter](https://github.com/PilarczykM/next-wordpress-starter "NextJS Wordpress Starter")
