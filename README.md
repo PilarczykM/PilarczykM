@@ -23,7 +23,6 @@
 - [Nexture Project [SCSS]](https://github.com/PilarczykM/Nature_Project "Nature Project")
 - [Trillo Project [SCSS]](https://github.com/PilarczykM/Trillo_Project "Trillo Project")
 - [Portwind [Tailwind]](https://github.com/PilarczykM/Tailwind-sandbox "Portwind Tailwind")
-- [Dashboard [React, (Syncfusion UI kit) Tailwind]](https://github.com/PilarczykM/Marcello_Dashboard "Dashboard")
 
 ## JS
 - [SOLID](https://github.com/PilarczykM/js_solid "JS SOLID")
