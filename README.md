@@ -1,7 +1,7 @@
 # 👋 Hi, I’m @PilarczykM
 - 👀 I interested in Frontend (React/NextJS/Angular)
-- 🤯 I not afraid to learn Backend (C#/PHP/NestJS)
-- 🌱 I learn React, Redux, Tailwind. Angular, NestJS
+- 🤯 I not afraid to learn Backend (C#)
+- 🌱 I learn React, Redux, Tailwind. Angular
 - 💞️ I look to collaborate on beginner to intermediate projects.
 - 🙀 I work for Sii as a Python Developer
 - 📫 How to reach me: marcinpilarczyk@me.com
