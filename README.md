@@ -14,9 +14,6 @@
 - [Learning notes - OOB, Architecture, JS](https://github.com/PilarczykM/learning-notes "learning-notes")
 - [State Manager Example Applications](https://github.com/PilarczykM/which-react-state-manager "Which state manager")
 
-## My Frontend mentor challenges repo
-- [Link](https://github.com/PilarczykM/frontendmentor-challenges)
-
 ## Basic HTML projects
 - [StudyIT [CSS]](https://github.com/PilarczykM/StudyIT "StudyIT")
 - [Nature Project [SCSS]](https://github.com/PilarczykM/Nexter_Project "Nexture Project")
