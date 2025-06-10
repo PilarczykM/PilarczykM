@@ -18,8 +18,8 @@ export async function getStaticPaths() {
 
 const { category } = Astro.params;
 
-const articels = await getCollection("blog");
-const categoryArticles = articels.filter(
+const articles = await getCollection("blog");
+const categoryArticles = articles.filter(
   article => article.data.category === category
 );
 
