@@ -1,0 +1,124 @@
+---
+pubDatetime: 2025-06-10
+category: AI
+series: embeddings
+title: Importance in NLP
+draft: false
+image: /og-images/articles/embeddings/proc.webp
+tags:
+  - AI
+  - Embeddings
+description: Transform complex information into a form that is understandable for machine learning algorithms.
+---
+
+# 📌 Importance in NLP
+
+Word embeddings have revolutionized how we work with text data. Before their introduction, NLP models struggled to understand synonyms or the relationships between words. But now, embeddings allow models to “learn” semantic relationships, enabling a deeper understanding of language in context. Whether you're building chatbots, text classifiers, or translation models, embeddings are the foundation of most modern NLP tasks.
+
+This shift isn't just theoretical — it's practical. Thanks to word embeddings, tasks like **sentiment analysis**, **named entity recognition**, and **text generation** have become more accurate and insightful. As you delve deeper into NLP, remember: word embeddings aren't just buzzwords — they're a core technique reshaping how we interact with machines.
+
+---
+
+# 📚 Theoretical Foundation
+
+## 🤔 What Are Word Embeddings?
+
+Let's get a bit technical — but hang in there, because this is where everything starts to make sense.
+
+**Word embeddings** represent words as vectors in a high-dimensional space. Each word is a point in that space, and words with similar meanings are placed closer together. Think of it as mapping out a giant “word universe” where distances between points indicate how related words are.
+
+For example, if you've ever wondered how machines know that **"apple"** and **"banana"** are related (both are fruits), it's because their vectors lie near each other. This vector-based representation allows models to capture meaning and context, even for combinations they haven't seen before.
+
+![](/og-images/articles/embeddings/vector-embeddings.jpg)
+
+## ⚠️ Why We Need Them
+
+One major issue in data science is the **curse of dimensionality**. Traditional methods like **one-hot encoding** assign each word a unique position in an extremely large vector. These vectors can be massive — tens of thousands of dimensions — and still fail to show how words relate. In one-hot encoding, **"apple"** is just as unrelated to **"banana"** as it is to **"giraffe"**. That's a big problem.
+
+**Word embeddings** solve this by reducing dimensionality and grouping similar words together in the vector space. This not only makes models more efficient but also allows them to better understand and generalize language patterns.
+
+---
+
+# 🏆 Famous Models
+
+You might be wondering: *“Which models create these embeddings?”* Here are the three major ones:
+
+- 🔹 **Word2Vec**
+  A neural network-based model that learns embeddings based on the context of words. It has two variants:
+  - **Skip-gram**: Predicts surrounding words from a target word.
+  - **CBOW (Continuous Bag of Words)**: Predicts a target word from its surrounding words.
+
+- 🔹 **GloVe (Global Vectors for Word Representation)**
+  A statistical model that constructs word embeddings using a word co-occurrence matrix. It captures global relationships across the corpus.
+
+- 🔹 **FastText**
+  Developed by Facebook, FastText improves on Word2Vec by breaking words into **subwords** (character n-grams). This allows it to handle **out-of-vocabulary** words and is highly effective in real-world NLP applications.
+
+
+## 🗂️ Example Data
+
+To illustrate how these models work, let's start with a small set of sample sentences as our training data:
+
+```py
+sentences = [["the", "cat", "sat", "on", "the", "mat"],
+             ["the", "dog", "barked"],
+             ["the", "dog", "sat", "on", "the", "rug"]]
+```
+
+## 🧠 Word2Vec
+
+Let's dive a bit deeper into **Word2Vec**. This model works by predicting either the context from a target word (in **Skip-gram**) or the target word from a context (in **CBOW**). It essentially trains the model to guess the surrounding words based on a given word (or vice versa), which helps the model understand relationships between words.
+
+```py
+from gensim.models import Word2Vec
+
+# Train Word2Vec model
+# window - Maximum distance between the current and predicted word within a sentence.
+model = Word2Vec(sentences=sentences, vector_size=20, window=5, min_count=1, workers=4)
+
+# Get vector for a word
+vector = model.wv['cat']
+
+print(vector)
+```
+In this case, you've trained a simple Skip-gram model, but you can easily switch it to CBOW. Notice that each word in the sentence is transformed into a 20-dimensional vector, and similar words like “cat” and “dog” will have similar vectors.
+
+**Vector for "cat" (example output):**:
+
+```text
+[ 0.03949034 -0.03494752 -0.04577933 -0.00177876 -0.0154992   0.03947159
+  0.02969287 -0.00772831  0.00755482  0.0089502   0.03908785 -0.04755094
+ -0.00102766  0.01734598 -0.00469486  0.04190886  0.04505392  0.03268253
+ -0.00355811  0.03855202]
+```
+
+## 💨 FastText
+**FastText** introduces an innovative approach by breaking down words into subwords (essentially, smaller chunks). This is especially useful when dealing with new or rare words. FastText allows the model to create embeddings even for words that weren't in the training data — a big advantage for many real-world tasks.
+
+```py
+from gensim.models import FastText
+
+model = FastText(sentences, vector_size=20, window=5, min_count=1, workers=4)
+
+# Get vector for a word
+vector = model.wv['cat']
+print(vector)
+```
+
+**Vector for "cat" (example output):**:
+```text
+[ 0.00783976  0.0030229   0.00900583 -0.00569606  0.00316941  0.00075386
+  0.00348486  0.00193368 -0.01009295  0.0033585   0.00256433  0.01739474
+ -0.00304165 -0.00682566  0.00910141 -0.00253481  0.02298975  0.00724554
+  0.00538781 -0.00026968]
+```
+
+FastText shines when you have out-of-vocabulary words. Since it breaks words into subword components, it can generate meaningful embeddings even for new words like “doggo” or “catto.”
+
+---
+
+# 🏁 Conclusion
+
+In summary, word embeddings are a cornerstone of modern Natural Language Processing. They transform discrete words into dense, continuous vector representations, allowing machines to grasp the nuanced semantic relationships between words that were impossible with older methods like one-hot encoding. By solving the "curse of dimensionality" and enabling models to understand context, embeddings have significantly advanced capabilities in tasks ranging from sentiment analysis to text generation.
+
+Models like **Word2Vec**, **GloVe**, and **FastText** each offer unique approaches to generating these powerful embeddings, with FastText providing a distinct advantage in handling out-of-vocabulary words through its subword analysis. As you continue to explore NLP, remember that a solid understanding of vector embeddings is fundamental to building intelligent and effective language-based applications. They are not just a theoretical concept but a practical tool that underpins the progress in how machines interact with and understand human language.

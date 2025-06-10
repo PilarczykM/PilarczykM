@@ -1,0 +1,107 @@
+---
+pubDatetime: 2025-06-10
+category: AI
+series: embeddings
+title: What Are Embeddings?
+draft: false
+image: /og-images/articles/embeddings/proc.webp
+tags:
+  - AI
+  - Embeddings
+description: Transform complex information into a form that is understandable for machine learning algorithms.
+---
+
+![Cover Image](/og-images/articles/embeddings/proc.webp)
+
+# 🧠 Embeddings Made Simple
+
+## 📘 What Are Embeddings?
+
+Embeddings are a way to convert complex data (like words, images, or graphs) into number-based formats (vectors) that machines can understand.  
+They help models recognize **patterns**, **relationships**, and **similarities** between things.
+
+![Image Classification](/og-images/articles/embeddings/king-qween-clasiffication.webp)
+
+---
+
+## 💡 Simple Example
+
+Words like: `king`, `queen`, `prince`, `princess`
+
+### 🧾 One-hot Encoding (Old Style)
+| Word     | One-hot Vector |
+| -------- | -------------- |
+| queen    | [1, 0, 0, 0]   |
+| king     | [0, 1, 0, 0]   |
+| princess | [0, 0, 1, 0]   |
+| prince   | [0, 0, 0, 1]   |
+
+🚫 Doesn't show how words are related.
+
+### 🔗 Embeddings (Better)
+| Word     | [Gender, Age] |
+| -------- | ------------- |
+| queen    | [1, 0]        |
+| king     | [0, 0]        |
+| princess | [1, 1]        |
+| prince   | [0, 1]        |
+
+✅ Shows gender and age — useful relationships!
+
+---
+
+## 🚀 Where Are Embeddings Used?
+
+- 🎬 **Recommendation Systems** – Suggest movies, products, etc.
+- 🗣️ **Natural Language Processing (NLP)** – Search, chatbots, summarizers.
+- 🖼️ **Image & Audio Analysis** – Facial recognition, voice ID.
+
+---
+
+## 🔢 Types of Embeddings
+
+### 🧩 Word Embeddings
+- Represent individual words as vectors.
+- Examples: `Word2Vec`, `GloVe`, `FastText`.
+
+### 🧾 Sentence Embeddings
+- Represent full sentences or paragraphs.
+- Examples: `SBERT`, `Universal Sentence Encoder`.
+
+### 🖼️ Image Embeddings
+- Convert images into vectors.
+- Help models find and classify images.
+
+### 🕸️ Graph Embeddings
+- Represent nodes in a network (like users in social media).
+- Useful for detecting relationships and communities.
+
+![Types](/og-images/articles/embeddings/type_of_embedding.webp)
+
+---
+
+## 🧰 Key Embedding Models
+
+### ⚙️ Word2Vec (by Google)
+- **CBOW**: Predicts a word from its neighbors.
+- **Skip-Gram**: Predicts neighbors from a word.
+- Captures relationships like: `"king" - "man" + "woman" ≈ "queen"`
+
+### 🧮 GloVe (by Stanford)
+- Counts word co-occurrences.
+- Vectors show how often words appear together.
+- E.g., `"ice"` and `"snow"` are close.
+
+### 🧠 BERT (by Google)
+- Context-aware: understands `"bank"` can mean river or money.
+- **Bidirectional**: Looks at words before and after.
+- Used for QA, classification, and more.
+
+### 🧾 GPT (by OpenAI)
+- Great at generating text: stories, articles, code.
+- **Unidirectional**: Looks only at past words.
+- Example: Given `"Once upon a time,"` it writes a whole story.
+
+---
+
+📎 In short: Embeddings are how machines make sense of complex stuff like text, images, or relationships — turning them into numbers that carry meaning.
