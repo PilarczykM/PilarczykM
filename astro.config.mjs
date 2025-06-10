@@ -10,7 +10,7 @@ import sitemap from "@astrojs/sitemap"
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://marcin-pilarczyk.netlify.app/',
+  site: 'https://marcin-pilarczyk.netlify.app',
   integrations: [react(), mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
