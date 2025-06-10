@@ -1,40 +1,64 @@
 import {
-  BunJs,
   Docker,
-  Figma,
-  Framer,
   Git,
-  MongoDB,
   NextJs,
-  NodeJs,
   Python,
   React,
   ReactQuery,
   Redis,
   Redux,
-  ShadcnUI,
   TailwindCSS,
   TypeScript,
-  Appwrite,
-  Astro
+  Astro,
+  FastAPI,
+  OpenAI,
+  HuggingFace,
 } from "developer-icons";
 
-import HonoIcon from '@/components/ui/icons/hono.astro'
-import FastapiIcon from '@/components/ui/icons/fastapi.astro'
-
+import Ollama from "@/components/ui/icons/ollama.astro";
+import Langchain from "@/components/ui/icons/langchain.astro";
+import Langgraph from "@/components/ui/icons/langgraph.astro";
 
 export const TECH_STACK = [
   // Programming Languages
-  {
-    title: "TypeScript",
-    href: "https://www.typescriptlang.org/",
-    icon: TypeScript,
-  },
   {
     title: "Python",
     href: "https://www.python.org/",
     icon: Python,
   },
+  {
+    title: "TypeScript",
+    href: "https://www.typescriptlang.org/",
+    icon: TypeScript,
+  },
+
+  // AI Stack
+  {
+    title: "Langchain",
+    href: "https://www.langchain.com/",
+    icon: Langchain,
+  },
+  {
+    title: "Langgraph",
+    href: "https://www.langchain.com/langgraph",
+    icon: Langgraph,
+  },
+  {
+    title: "Ollama",
+    href: "https://ollama.com/",
+    icon: Ollama,
+  },
+  {
+    title: "OpenAI",
+    href: "https://openai.com/",
+    icon: OpenAI,
+  },
+  {
+    title: "HuggingFace",
+    href: "https://huggingface.co/",
+    icon: HuggingFace,
+  },
+
 
   // Frontend Technologies
   {
@@ -63,59 +87,20 @@ export const TECH_STACK = [
     icon: Redux,
   },
   {
-    title: "Zustand",
-    href: "https://zustand-demo.pmnd.rs/",
-  },
-  {
     title: "React Query",
     href: "https://tanstack.com/query/latest",
     icon: ReactQuery,
-  },
-  {
-    title: "shadcn/ui",
-    href: "https://ui.shadcn.com/",
-    icon: ShadcnUI,
-  },
-  {
-    title: "Motion",
-    href: "https://motion.dev/",
-    icon: Framer,
   },
 
 
   // Backend Technologies
   {
-    title: "Node.js",
-    href: "https://nodejs.org/",
-    icon: NodeJs,
-  },
-  {
-    title: "Bun",
-    href: "https://bun.sh/",
-    icon: BunJs,
-  },
-  {
     title: "FastAPI",
     href: "https://fastapi.tiangolo.com/",
-    icon: FastapiIcon
-  },
-  {
-    title: "Honojs",
-    href: "https://hono.dev/",
-    icon: HonoIcon
-  },
-  {
-    title: "Appwrite",
-    href: "https://appwrite.io",
-    icon: Appwrite
+    icon: FastAPI
   },
 
   // Databases & Caching
-  {
-    title: "MongoDB",
-    href: "https://www.mongodb.com/",
-    icon: MongoDB,
-  },
   {
     title: "Redis",
     href: "https://redis.io/",
@@ -134,13 +119,6 @@ export const TECH_STACK = [
     icon: Git,
   },
 
-
-
   // Miscellaneous
-  {
-    title: "Figma",
-    href: "https://www.figma.com/",
-    icon: Figma,
-  },
 ];
 

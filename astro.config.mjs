@@ -6,10 +6,12 @@ import react from "@astrojs/react";
 
 import mdx from "@astrojs/mdx";
 
+import sitemap from "@astrojs/sitemap"
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://louai.site',
-  integrations: [react(), mdx()],
+  site: 'https://marcinpilarczyk.pl', // Change for new site.
+  integrations: [react(), mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
   },

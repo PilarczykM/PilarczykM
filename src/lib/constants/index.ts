@@ -25,6 +25,6 @@ export const SOCIAL_LINKS = [
   {
     name: 'Linkedin',
     icon: LinkedinIcon,
-    url: "",
+    url: "https://www.linkedin.com/in/marcin-pilarczyk/",
   },
 ];

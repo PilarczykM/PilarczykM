@@ -1,9 +1,10 @@
 ---
-import LouaiAvatar from "@/components/ui/louai-avatar.astro";
+import Avatar from "@/components/ui/avatar.astro";
 import Box from "@/components/box/index.astro";
 import BoxContent from "@/components/box/content.astro";
 
 import { PROFILE_INFO } from "@/lib/constants/profile";
+import {SOCIAL_LINKS} from "@/lib/constants/index"
 import { Briefcase } from "lucide-react";
 
 import VerifiedIcon from "@/components/ui/icons/verified.astro";
@@ -15,7 +16,7 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
 <div class="screen-line-after relative flex items-center p-4 md:border-x">
   <div class="shrink-0">
     <div class="relative z-1 mx-0.5 my-1">
-      <LouaiAvatar
+      <Avatar
         className="size-20 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background sm:size-28"
       />
     </div>
@@ -43,7 +44,7 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
   </div>
 </div>
 
-<!-- <div
+<div
   class="screen-line-after inline-flex w-full items-center gap-2 border-x bg-yellow-100 px-3 py-2 text-sm font-semibold dark:bg-yellow-500/10"
 >
   <span class="animate-bounce text-base">👋</span> I'm open to new opportunities
@@ -51,26 +52,27 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
   <a href={`mailto:${PROFILE_INFO.email}`} class="underline underline-offset-4">
     get in touch
   </a>
-</div> -->
+</div>
 
 <Box>
   <BoxContent className="space-y-3">
-    <span class="flex items-center justify-start gap-2">
+    <!-- <span class="flex items-center justify-start gap-2">
       <Briefcase className="size-4" />
       I build software at
       <a
-        href="https://activepieces.com"
+        href="#"
         target="_blank"
         class="underline underline-offset-4"
       >
-        Activepieces
+        COMPANY_NAME
       </a>
-    </span>
+    </span> -->
+
     <span class="flex items-center justify-start gap-2">
       <Briefcase className="size-4" />
       Take a look at my
       <a
-        href="https://drive.google.com/file/d/1c7-UIHy8GUvgj2XHuf7nfhUU4vpjRXSt/view?usp=sharing"
+        href="https://drive.google.com/file/d/17Wka4KGBE9qAOONSSewkP17-cvqYsvjY/view?usp=drive_link"
         target="_blank"
         class="underline underline-offset-4"
       >
@@ -82,11 +84,11 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
       <XIcon className="size-4" />
       Follow me on
       <a
-        href="https://x.com/Louai_Dourov"
+        href="https://x.com/mpilarczyk93"
         target="_blank"
         class="underline underline-offset-4"
       >
-        Twitter
+        X
       </a>
     </span>
 
@@ -94,7 +96,7 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
       <LinkedinIcon className="size-4" />
       Let's connect on
       <a
-        href="https://www.linkedin.com/in/louai-boumediene-018919262/"
+        href=`${SOCIAL_LINKS.find(link => link.name === 'Linkedin')?.url ?? '#'}`
         class="underline underline-offset-4"
         target="_blank"
       >
@@ -106,7 +108,7 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
       <GithubIcon className="size-4" />
       Check out my repos on
       <a
-        href="https://github.com/Louai-Zokerburg"
+        href=`${SOCIAL_LINKS.find(link => link.name === 'Github')?.url ?? '#'}`
         class="underline underline-offset-4"
         target="_blank"
       >

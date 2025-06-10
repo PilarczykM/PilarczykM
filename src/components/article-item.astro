@@ -21,7 +21,6 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
   class="group flex w-full cursor-pointer items-center"
 >
   <NotebookPen className="mx-5 size-5 shrink-0 text-muted-foreground" />
-
   <div
     class="flex flex-1 flex-col items-start justify-center gap-3 border-l p-4"
   >
@@ -39,7 +38,7 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
 
     <ul class="flex flex-wrap items-center justify-start gap-x-4">
       {
-        article.data.tags.map(tag => (
+        article.data.tags.map((tag) => (
           <li class="text-xs font-semibold">#{tag}</li>
         ))
       }
