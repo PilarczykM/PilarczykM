@@ -1,0 +1,175 @@
+---
+pubDatetime: 2025-07-02
+category: AI
+series: n8n
+title: Automating Gmail Labeling and Job Offer Notifications with n8n and OpenAI
+draft: false
+image: /og-images/articles/n8n/gmail-labeling-workflow-screenshot.png
+tags:
+  - AI
+  - OpenAI
+  - Gmail
+  - n8n
+  - Discord
+  - Automation
+description: >
+  Build an automated workflow in n8n that categorizes Gmail messages using OpenAI,
+  labels them, deletes spam, and sends recruitment email summaries to Discord.
+---
+
+Managing your inbox doesn't have to be a chore. With [n8n](https://n8n.io/), you can build a workflow that not only **categorizes emails automatically** using AI but also **notifies you about important job offers** in real time via Discord.
+
+In this post, I'll walk you through a production-ready workflow that:
+
+- Runs every **10 minutes** to check for new emails.
+- Classifies each message into **6 categories** using GPT-powered classification.
+- Labels emails in Gmail accordingly.
+- Marks selected messages as read.
+- Summarizes job offers and posts them to a Discord channel.
+
+Let's see how it works.
+
+---
+
+## 🎯 Workflow Overview
+
+Below is the high-level flow:
+
+1. **Scheduled Trigger**  
+   Runs every 10 minutes.
+
+2. **Fetch Unread Emails**  
+   Retrieves all unread messages via the Gmail node.
+
+3. **AI Classification**  
+   Uses a **LangChain Text Classifier** powered by OpenAI to assign one of these categories:
+   - Personal
+   - Recruitment
+   - Social
+   - Bills
+   - Spam
+   - System Notifications
+
+4. **Label Actions**  
+   Depending on the classification, the workflow:
+   - Adds Gmail labels.
+   - Marks messages as read (for Social and System Notifications).
+   - Deletes spam automatically.
+
+5. **Job Offer Summarization**  
+   If the email is a **Recruitment message**:
+   - Fetches the full content.
+   - Summarizes key details like position, salary range, tools, and contract type using GPT.
+   - Sends a nicely formatted summary to a Discord channel.
+
+Here's an example of what gets posted to Discord:
+
+> 💼 **New Job Offer**
+>
+> - **Title:** Frontend Developer Opportunity
+> - **Position:** Frontend Developer
+> - **Salary:** 15k-20k PLN B2B
+> - **Technologies:** React, TypeScript
+> - **Contract:** B2B
+> - **Mode:** Remote
+> - **Company:** Acme Corp, SaaS
+> - [View Offer](https://...)
+> - [Company Website](https://...)
+
+---
+
+## 🛠️ Key Nodes and Logic
+
+### 🟢 Schedule Trigger
+Runs every 10 minutes to keep your inbox clean and up to date.
+
+```json
+{
+  "rule": {
+    "interval": [
+      {
+        "field": "minutes",
+        "minutesInterval": 10
+      }
+    ]
+  }
+}
+```
+
+---
+
+### 🟢 Gmail: Fetch Unread Messages
+Pulls in all new, unread emails.
+
+---
+
+### 🟢 OpenAI: Text Classification
+Uses GPT-4o-mini to categorize emails.
+Each category has a clear description, for example:
+
+- **Recruitment**: Messages with job offers.
+- **Spam**: Unsolicited or suspicious content.
+
+---
+
+### 🟢 Labeling Logic
+Depending on the category:
+
+- **Personal**: Apply a *Personal* label.
+- **Recruitment**: Apply a *Recruitment* label.
+- **Social**: Apply *Social* label and mark as read.
+- **Rachunki**: Apply *Bills* label.
+- **System Notifications**: Apply label and mark as read.
+- **Spam**: Delete automatically.
+
+---
+
+### 🟢 Job Offer Summarization
+When a message is categorized as **Recruitment**, this workflow:
+
+1. Retrieves the full HTML content.
+2. Prompts GPT to extract structured information.
+3. Posts the summary to Discord via a webhook.
+
+---
+
+## ✨ Why This Is Useful
+
+- **Never miss a job offer again**—get instant Discord alerts.
+- Keep your inbox organized with minimal manual effort.
+- Use AI to categorize messages with high accuracy.
+- Automatically delete spam, reducing clutter.
+
+---
+
+## 🚀 How To Use This Workflow
+
+1. **Install n8n** if you haven't already.
+2. Create credentials for:
+   - Gmail OAuth2
+   - OpenAI API
+   - Discord Webhook
+3. Import the workflow JSON (or recreate manually). [Link](https://github.com/PilarczykM/AI-Notes/tree/main/n8n/gmail_label_and_notify)
+4. Adjust label IDs to match your Gmail labels.
+5. Configure your schedule interval.
+6. Enable the workflow.
+
+---
+
+## 🧩 Example Screenshot
+
+Below is a preview of the workflow in n8n:
+
+![Workflow Screenshot](/og-images/articles/n8n/gmail-labeling-workflow-screenshot.png)
+
+---
+
+## 🌟 Final Thoughts
+
+This setup showcases how **n8n + GPT + Discord** can create a seamless automation pipeline that saves time and improves productivity.
+
+Have questions or want help customizing it? Feel free to reach out!
+
+---
+
+👉 [Get Started with n8n](https://n8n.io/)
